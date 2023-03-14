@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header'
+import Moon from './components/Moon'
+import AboutMe from './components/AboutMe'
+import React, { useEffect } from 'react';
+import * as sections from './Enums/Index.enum';
+import Experience from './components/Experience/Experience';
 
 function App() {
+
+  var currentIndex = 0;
+  var slides = ['Page-1', 'Page-2', 'Page-3'];
+
+  useEffect(() => {
+    // subscribe event
+    window.addEventListener("wheel", onMouseWheel, { passive: false });
+    return () => {
+      // unsubscribe event
+      window.removeEventListener("wheel", onMouseWheel);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const onMouseWheel = (e) => {
+    if (e.wheelDelta < 0 && currentIndex !== sections.sectionIndex.LAST_INDEX) {
+      document.getElementById(slides[currentIndex + 1]).scrollIntoView({behavior: 'smooth'});
+      currentIndex++;
+    } else if (e.wheelDelta > 0 && currentIndex !== sections.sectionIndex.FIRST_INDEX) {
+      document.getElementById(slides[currentIndex - 1]).scrollIntoView({behavior: 'smooth'});
+      currentIndex--;
+    }
+
+    e.preventDefault();
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <AboutMe></AboutMe>
+      <Moon></Moon>
+      <Experience></Experience>
+      <div className = "sky-color"></div>
     </div>
   );
 }

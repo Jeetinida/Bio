@@ -1,0 +1,19 @@
+.slider-style-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider-show {
+    width: 50%;
+}
+
+.slider-title {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.slider-text {
+    font-size: 16px;
+}
