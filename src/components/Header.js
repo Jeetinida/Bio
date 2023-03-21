@@ -6,6 +6,7 @@ import cloud3 from '../assets/cloud3.svg';
 import white_cloud1 from '../assets/b_cloud01.svg';
 import white_cloud from '../assets/b_cloud02.svg';
 import moon from '../assets/moon.svg';
+import Pdf from '../Jeet-Vyas.pdf';
 
 class Header extends React.Component {
 
@@ -27,10 +28,16 @@ class Header extends React.Component {
             <div className="fp-tableCell" style={{height: '760px'}}>
               <div className="fullpage__slide">
                   <div className="title title--top">
-                  <h1 className="title__text js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}>JEET<br />VYAS</h1>
-                  <div className="border js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}><span /><span className="js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}} /></div>
-                  <p className="title__lead js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}>Software Developer /<br />Machine Learning engineer.</p>
+                    <h1 className="title__text js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}>JEET<br />VYAS</h1>
+                    <div className="border js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}><span /><span className="js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}} /></div>
+                    <p className="title__lead js-letter" style={{transform: 'translateX(0%) translateZ(0px)'}}>Software Developer /<br />Machine Learning engineer.</p>
+                    <div className='social-class'>
+                      <a href="https://github.com/jeetvyas" target="blank"><i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/jeet-vyas-he-him-aa3946122/" target="blank"><i class="fa fa-linkedin"></i></a>
+                      <a href={Pdf} target="blank"><i class="fa fa-file-pdf-o"></i></a>
+                    </div>
                   </div>
+                  
                   <div className="moon">
                   <div className="moon__img js-parallax-moon" style={{transform: 'translate3d(0px, 0px, 0px) rotate(0.0001deg)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden', pointerEvents: 'none'}}>
                       <div className="moon__front layer" data-depth="0.2" style={{transform: 'translate3d(-3px, 2.1px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden', position: 'relative', display: 'block', left: '0px', top: '0px'}}>
@@ -57,6 +64,7 @@ class Header extends React.Component {
                   </div>
                   </div>
               </div>
+              
             </div>
             <a href="#reile"></a>
         </div>

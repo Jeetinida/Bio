@@ -6,11 +6,12 @@ import AboutMe from './components/AboutMe'
 import React, { useEffect } from 'react';
 import * as sections from './Enums/Index.enum';
 import Experience from './components/Experience/Experience';
+import Contact from './components/contact/contact';
 
 function App() {
 
   var currentIndex = 0;
-  var slides = ['Page-1', 'Page-2', 'Page-3'];
+  var slides = ['Page-1', 'Page-2', 'Page-3', 'Page-4'];
 
   useEffect(() => {
     // subscribe event
@@ -40,6 +41,7 @@ function App() {
       <AboutMe></AboutMe>
       <Moon></Moon>
       <Experience></Experience>
+      <Contact></Contact>
       <div className = "sky-color"></div>
     </div>
   );
