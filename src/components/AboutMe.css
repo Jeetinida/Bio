@@ -1,0 +1,10 @@
+.title_page2 {
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 23%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    z-index: 200;
+    margin-left: 11%
+}
