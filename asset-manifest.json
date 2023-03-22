@@ -15,9 +15,9 @@
     "static/media/logo.6ce24c58.svg": "/Bio/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a3fe5c6d.js",
-    "static/js/2.7d0a0328.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.5fdc9837.chunk.js"
+    "/Bio/static/js/runtime-main.a3fe5c6d.js",
+    "/Bio/static/js/2.7d0a0328.chunk.js",
+    "/Bio/static/css/main.a617e044.chunk.css",
+    "/Bio/static/js/main.5fdc9837.chunk.js"
   ]
 }
